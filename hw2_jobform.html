@@ -2,9 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>jobform_2</title>
+    <style>h3 {font-weight:bold;}
+    h5{color:red;
+    text-size:10px;}
+    div.box {background-color: lightblue;
+    font-weight:bold;
+    width:800px;
+    padding-left:10px;}
+    div.f {display:inline-block;
+    margin-left: 8px;
+    text-align: right;
+    width:130px;
+    padding-right:8px;}
+    span {color:red;}
+            </style>
 </head>
 <body>
-
+<h3>취업 정보 계정 만들기</h3><br>
+<h5>*필수 입력 항목</h5>
+<br><form>
+    <div class = 'box'>기본 정보</div><br>
+    <div class="f">이 름<span>*</span></div><input type="text" size="8"><br>
+    <div class="f">이메일<span>*</span></div><input type="email" size="15" placeholder="id@domain_name"><br>
+    <div class="f">암호<span>*</span></div><input type="password" size="12"><br>
+    <div class="f">암호 확인<span>*</span></div><input type="password" size="12"><br>
+    <div class="f">모바일 폰<span>*</span></div><input type="tel" size='13' placeholder="010-0000-0000"><br>
+    <div class="f">개인 홈페이지</div><input type="url" size="30" placeholder="http://"><br>
+    <div class="f">주소<span>*</span><input type="text" size="30"><br></div>
+    <div class = 'box'>학 력</div>
+    <div class = 'f'>학교명<span>*</span></div><input type="text" size="12"><br>
+    <div class="f">전공<span>*</span></div><input type="text" size="12"><br>
+    <div class="f">졸업 여부<span>*</span></div><select name="졸업여부">
+                <option value="---">---선택---</option>
+                <option value="예정">졸업 예정</option>
+                <option value="졸업">졸업</option>
+            </select><br>
+    <div class="f">졸업(예정)일</div><input type="date"><br>
+    <div class="box">업무 경력</div>
+    <div class = 'f'>
+        근무업체명</div><input type="text" size="20"><br>
+    <div class="f">직위</div><input type="text" size="10"><br>
+    <div class="f">담당 업무</div>
+    <textarea name="담당업무" cols="80" rows="10">
+        이전 업체에서 담당한 업무를 기술하시오.
+    </textarea><br>
+    <div class="f">근무 년수</div><input type="number" min="0" max="10" step="0.5">년<br>
+    <div class="box">자기소개서</div>
+    <br><br>
+    <div class="f">첨부 파일<input type="file" value="파일 선택"></div><br>
+        <p style="margin-left: 200px"><input type="submit" value="제출">
+            <input type="reset" value="재작성"></p>
+</form>
 </body>
 </html>
