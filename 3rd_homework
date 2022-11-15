@@ -7,12 +7,9 @@
         function new_row(n){ //함수 작성
         var m = parseInt(n, 2);
         document.write(m.toString(16));
-        }
-        
+        }      
     </script>
          
-    
-  
 
 </head>
 <body>
