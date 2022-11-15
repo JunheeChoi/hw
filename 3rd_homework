@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3rd_practice</title>
+    <script>
+        function new_row(n){ //함수 작성
+        var m = parseInt(n, 2);
+        document.write(m.toString(16));
+        }
+        
+    </script>
+         
+    
+  
+
+</head>
+<body>
+    <script>
+        var n = prompt('2진수 작성', "");
+        new_row(n); //함수 호출
+    </script>
+</body>
+</html>
