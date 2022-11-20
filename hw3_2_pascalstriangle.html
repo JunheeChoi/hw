@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hw3_2_pascalstriangle</title>
+    <script>
+        function new_row(prev_row){
+            let row = [];
+            row.push(1);
+            document.write(row+'<br>')
+            for(let i = 1; i <= prev_row-1; i++){
+                for (let j = row.length-1; j>0; j--) {
+                    row[j] = row[j-1] + row[j];
+
+                }
+            row.push(1);
+            document.write(row + '<br>');
+                }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var prev_row = prompt('파스칼 삼각형의 높이:',"")
+        new_row(prev_row)
+    </script>
+
+</body>
+</html>
